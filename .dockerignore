@@ -1,0 +1,35 @@
+# Git
+.git
+.gitignore
+
+# Docker config
+.dockerignore
+docker-compose*.yml
+Dockerfile*
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+vendor/
+node_modules/
+
+# Logs
+*.log
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docs
+README.md
