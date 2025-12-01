@@ -4,7 +4,7 @@
 
 # Docker config
 .dockerignore
-docker-compose*.yml
+*compose.yml
 Dockerfile*
 
 # Environment & secrets
@@ -33,3 +33,7 @@ temp/
 
 # Docs
 README.md
+
+# Other
+
+db-load-script.sql
