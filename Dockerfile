@@ -4,7 +4,7 @@ RUN apt-get update \
     && apt-get upgrade -y \
     && docker-php-ext-install mysqli
 
-COPY . /var/www/html/
+COPY src /var/www/html/
 
 ENV DB_HOST=localhost
 ENV DB_USER=ecomuser
