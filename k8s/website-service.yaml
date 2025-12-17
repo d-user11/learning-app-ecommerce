@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: website-svc
+spec:
+  # type: ClusterIP # TODO: Change to LoadBalancer once ready to deploy to cloud
+  type: NodePort
+  selector:
+    app: website
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+    nodePort: 30036
+    protocol: TCP
+  # ports:
+  # - name: http
+  #   port: 8080
+  #   targetPort: 80
+  #   protocol: TCP
